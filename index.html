@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Understanding IT Infrastructure and IT Enterprise</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg: #fef6fb;
+    --text: #4a4a5e;
+    --muted: #7a7a8c;
+    --accent-soft: #ffe4f3;
+    --accent-line: #ffb3d9;
+    --pastel-blue: #e0f4ff;
+    --pastel-pink: #ffd6ed;
+    --pastel-purple: #f0e6ff;
+    --pastel-mint: #d4f4dd;
+    --pastel-peach: #ffe8d6;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.9;
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 820px;
+    margin: 70px auto 100px;
+    padding: 0 22px;
+}
+
+h1, h2 { font-family: 'Merriweather', serif; }
+
+h1 { 
+    font-size: 2.6rem; 
+    margin-bottom: 18px;
+    color: #6b4f9e;
+}
+
+.subtitle { color: var(--muted); margin-bottom: 12px; }
+
+.author {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.author-name {
+    color: #c96fa8;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.reading-time {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.reading-time::before {
+    content: "⏱️";
+    font-size: 1.1rem;
+}
+
+h2 { 
+    font-size: 1.7rem; 
+    margin-top: 54px; 
+    margin-bottom: 16px;
+    color: #9b7abc;
+}
+
+p { margin-bottom: 18px; text-align: justify; }
+
+.first-paragraph::first-letter {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 0.8;
+    float: left;
+    margin: 8px 12px 0 0;
+    color: #c96fa8;
+    font-family: 'Merriweather', serif;
+}
+
+.hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 30px 0;
+    box-shadow: 0 4px 20px rgba(255, 179, 217, 0.3);
+    border: 3px solid var(--pastel-pink);
+}
+
+.content-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 25px 0;
+    box-shadow: 0 3px 15px rgba(224, 244, 255, 0.5);
+    border: 3px solid var(--pastel-blue);
+}
+
+.content-image:nth-of-type(2) {
+    border-color: var(--pastel-mint);
+    box-shadow: 0 3px 15px rgba(212, 244, 221, 0.5);
+}
+
+.content-image:nth-of-type(3) {
+    border-color: var(--pastel-purple);
+    box-shadow: 0 3px 15px rgba(240, 230, 255, 0.5);
+}
+
+.content-image:nth-of-type(4) {
+    border-color: var(--pastel-peach);
+    box-shadow: 0 3px 15px rgba(255, 232, 214, 0.5);
+}
+
+.content-image:nth-of-type(5) {
+    border-color: var(--pastel-pink);
+    box-shadow: 0 3px 15px rgba(255, 214, 237, 0.5);
+}
+
+.image-caption {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.callout {
+    background: var(--pastel-purple);
+    border-left: 6px solid #9b7abc;
+    padding: 18px 22px;
+    border-radius: 6px;
+    margin: 28px 0;
+}
+
+.references {
+    margin-top: 70px;
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.references h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #4a8c5e;
+}
+
+.references p {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.references a {
+    color: #7b5ba1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.references a:hover {
+    text-decoration: underline;
+    color: #9b7abc;
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+
+<h1>Understanding IT Infrastructure and IT Enterprise</h1>
+<p class="subtitle">How Technology Evolution Shapes Modern Cybersecurity</p>
+<p class="author">By <span class="author-name">Vellanie Lawrence</span></p>
+
+<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80" alt="Modern data center with server racks" class="hero-image">
+<p class="image-caption">Photo by Taylor Vick on Unsplash - Modern enterprise data center infrastructure</p>
+
+<p class="first-paragraph">
+Today, it is almost impossible to imagine an organization running without information technology. From internal communication to customer services, technology supports nearly every business activity. Behind these digital operations, there are two important foundations that often come up in discussions: IT Enterprise and IT Infrastructure.
+</p>
+
+<p>
+Even though these terms sound technical, the basic idea is quite simple. IT Enterprise is about how an organization manages and aligns technology with its business goals, while IT Infrastructure refers to the actual systems and resources that make the technology work. When we look at how both have evolved over time, we can better understand why cybersecurity has become such a major concern.
+</p>
+
+<h2>What Do We Mean by IT Enterprise?</h2>
+
+<p>
+IT Enterprise is not just about owning computers or using software. It is about how an organization plans, organizes, and governs its technology in a structured way so that it truly supports business objectives. In other words, technology should not exist separately from the business. It should move in the same direction as the organization's strategy.
+</p>
+
+<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80" alt="Business strategy and planning" class="content-image">
+<p class="image-caption">Photo by Scott Graham on Unsplash - Strategic business and technology planning</p>
+
+<p>
+A concept that is often linked to IT Enterprise is Enterprise Architecture. This helps organizations see the big picture by mapping how business processes, data, applications, and technologies are connected. With this approach, technology decisions become more coordinated and less random. It reduces duplication of systems and helps ensure that IT investments actually provide value.
+</p>
+
+<p>
+Without proper planning at the enterprise level, organizations may end up with scattered systems, overlapping tools, and unclear responsibilities. Besides being inefficient, this situation can also create security weaknesses that are difficult to manage.
+</p>
+
+<h2>IT Infrastructure as the Operational Foundation</h2>
+
+<p>
+While IT Enterprise focuses on strategy and governance, IT Infrastructure is the operational side of technology. It includes servers, networks, storage systems, user devices, and also software platforms and cloud services. These components work together to make sure applications run properly and data can be accessed when needed.
+</p>
+
+<img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1200&q=80" alt="IT infrastructure and technology systems" class="content-image">
+<p class="image-caption">Photo by Paul Hanaoka on Unsplash - Enterprise IT infrastructure components</p>
+
+<p>
+In enterprise environments, infrastructure is usually large scale and highly interconnected. It must support many users, different departments, and sometimes multiple geographic locations. Because of this, enterprise infrastructure is not only complex but also critical. If it fails, business operations can be disrupted immediately.
+</p>
+
+<p>
+Infrastructure is also supported by people and processes. IT teams, security staff, and operational procedures are all part of ensuring that systems remain available and secure.
+</p>
+
+<h2>How IT Infrastructure Has Changed Over Time</h2>
+
+<p>
+Enterprise IT infrastructure did not become complex overnight. It developed step by step as technology advanced.
+</p>
+
+<p>
+In the early days, computing was centralized. Large mainframe systems handled most tasks in controlled environments. Security at that time was mainly about physical protection and limiting internal access.
+</p>
+
+<p>
+Later, organizations adopted client and server models. Employees used personal computers that connected to central servers. This improved flexibility and productivity, but it also increased the number of devices that needed to be managed and secured.
+</p>
+
+<img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80" alt="Technology evolution and digital transformation" class="content-image">
+<p class="image-caption">Photo by NASA on Unsplash - The evolution of digital technology infrastructure</p>
+
+<p>
+The next big shift came with virtualization. Multiple virtual systems could run on a single physical machine, which improved efficiency and scalability. However, it also added more layers of configuration, making environments harder to manage.
+</p>
+
+<p>
+Today, many enterprises use cloud and hybrid models. Systems may run partly in internal data centers and partly in external cloud platforms. This allows fast growth and global access, but it also spreads infrastructure across different environments, increasing the challenge of maintaining consistent security.
+</p>
+
+<h2>Why This Evolution Affects Cybersecurity</h2>
+
+<p>
+As infrastructure becomes more distributed and connected, the number of possible entry points for attackers also increases. Every device, account, and online service becomes part of what is often called the attack surface.
+</p>
+
+<img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&q=80" alt="Cybersecurity threats and network security" class="content-image">
+<p class="image-caption">Photo by Matthieu Beaumont on Unsplash - Modern cybersecurity infrastructure and threats</p>
+
+<p>
+Modern cyber threats take advantage of this situation. Ransomware attacks target enterprise networks to disrupt operations. Phishing campaigns aim to steal login credentials that give access to internal systems or cloud platforms. Attacks on third party partners can also indirectly affect an organization.
+</p>
+
+<div class="callout">
+Because of these evolving threats, traditional security approaches that focus only on protecting the network perimeter are no longer enough. Organizations now need stronger identity management, continuous monitoring, and better visibility across all systems and environments.
+</div>
+
+<p>
+Cybersecurity has become a shared responsibility across the organization, not just a technical task handled by the IT department.
+</p>
+
+<h2>Linking IT Enterprise, Infrastructure, and Risk</h2>
+
+<p>
+As organizations rely more on technology, the risks associated with IT also increase. These risks include security breaches, system downtime, performance issues, and failure to meet regulatory requirements. In enterprise settings, such incidents can lead to financial losses and damage to reputation.
+</p>
+
+<img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&q=80" alt="Enterprise risk management and cloud infrastructure" class="content-image">
+<p class="image-caption">Photo by Jordan Harrison on Unsplash - Cloud infrastructure and enterprise risk management</p>
+
+<p>
+This is why cybersecurity is now treated as part of enterprise risk management. Organizations identify which systems and data are most important, evaluate possible threats, and apply controls to reduce potential impact.
+</p>
+
+<p>
+These controls include access restrictions, encryption, network segmentation, and continuous system monitoring. At the same time, incident response and recovery planning help ensure that the organization can continue operating even after a disruption.
+</p>
+
+<h2>Conclusion</h2>
+
+<p>
+The development of IT Enterprise and IT Infrastructure has allowed organizations to become more efficient, connected, and innovative. However, this progress also brings greater complexity and higher exposure to cyber threats.
+</p>
+
+<p>
+By understanding how enterprise technology is structured and how infrastructure supports daily operations, we can see why cybersecurity must be managed in a strategic and continuous way. Technology and security can no longer be separated. Both must grow together to ensure that organizations remain resilient in an increasingly digital world.
+</p>
+
+<div class="references">
+<h3>References</h3>
+
+<p>
+National Institute of Standards and Technology (NIST). (2024). <em>NIST IR 8286 - Integrating Cybersecurity and Enterprise Risk Management (ERM)</em>. Retrieved from <a href="https://csrc.nist.gov/pubs/ir/8286/r1/ipd" target="_blank">https://csrc.nist.gov/pubs/ir/8286/r1/ipd</a>
+</p>
+
+<p>
+Gartner, Inc. (2023). <em>Gartner Top Cybersecurity Predictions for 2023-2024</em>. Retrieved from <a href="https://www.gartner.com/en/newsroom/press-releases/2023-03-28-gartner-unveils-top-8-cybersecurity-predictions-for-2023-2024" target="_blank">https://www.gartner.com/en/newsroom/press-releases/2023-03-28-gartner-unveils-top-8-cybersecurity-predictions-for-2023-2024</a>
+</p>
+
+<p>
+Fortinet. (2025). <em>Ransomware Statistics 2025: Latest Trends & Must-Know Insights</em>. Retrieved from <a href="https://www.fortinet.com/resources/cyberglossary/ransomware-statistics" target="_blank">https://www.fortinet.com/resources/cyberglossary/ransomware-statistics</a>
+</p>
+
+<p>
+Zachman International. (2024). <em>Enterprise Architecture: Looking at 2024 and Beyond</em>. Retrieved from <a href="https://zachman-feac.com/resources/blog/enterprise-architecture-looking-at-2024-and-beyond" target="_blank">https://zachman-feac.com/resources/blog/enterprise-architecture-looking-at-2024-and-beyond</a>
+</p>
+
+</div>
+
+</div>
+</body>
+</html>
